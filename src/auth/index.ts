@@ -11,7 +11,7 @@ const authorization_header = process.env.AUTHORIZATION_HEADER_INFO || "authoriza
 
 import { createLogger, writeLogErr, writeLogWarn } from "../logger";
 import { AuthorizationHeaderNotSupportedError, InvalidAccessTokenFormatError,
-         InvalidSchemeAuthorizationError, MissingAccessTokenError, VerifyingAccessTokenError } from "./errors";
+         InvalidSchemeAuthorizationError, MissingAccessTokenError, VerificationAccessTokenError } from "./errors";
 
 const logger: winston.Logger = createLogger("Auth");
 
@@ -60,14 +60,14 @@ export function middleware(req: any, res: any, next: any): void {
       res.status(400).send({ error });
     }
     if (!json) {
-      const error = new VerifyingAccessTokenError();
+      const error = new VerificationAccessTokenError();
       writeLogWarn(req, error, { reason: "Empaty payload" });
       res.status(400).send({ error });
       return;
     }
     const payload = json.payload;
     if (!payload) {
-      const error = new VerifyingAccessTokenError();
+      const error = new VerificationAccessTokenError();
       writeLogWarn(req, error, { reason: "Empaty payload" });
       res.status(400).send({ error });
       return;
@@ -79,7 +79,7 @@ export function middleware(req: any, res: any, next: any): void {
     };
     return next();
   } catch(reason: any) {
-    const error = new VerifyingAccessTokenError();
+    const error = new VerificationAccessTokenError();
     writeLogErr(req, error, reason);
     res.status(400).send({ error });
   }
