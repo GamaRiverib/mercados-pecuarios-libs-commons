@@ -1,6 +1,6 @@
 export const USER_ID_KEY: string = "user";
-export const DEFAULT_AUTHORIZATION_HEADER = "authorization";
-export const API_GATEWAY_AUTHORIZATION_HEADER = "x-apigateway-api-userinfo";
+export const DEFAULT_AUTHORIZATION_HEADER: string = "authorization";
+export const API_GATEWAY_AUTHORIZATION_HEADER: string = "x-apigateway-api-userinfo";
 
 export const USER_ROLES = {
   SUPER_ADMIN: "SUPER_ADMIN",

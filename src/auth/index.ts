@@ -43,7 +43,7 @@ export function middleware(req: any, res: any, next: any): void {
       }
       const token = req.headers[authorization_header].split(" ")[1];
       json = decode(token, { complete: true });
-      if (typeof json !== "object" || !json.payload) {
+      if (!json || typeof json !== "object" || !json.payload) {
         const error = new InvalidAccessTokenFormatError();
         writeLogErr(req, error);
         res.status(403).send({ error });
