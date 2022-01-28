@@ -6,7 +6,7 @@ import { USER_ID_KEY } from "../constants";
 import { createError } from "../errors";
 
 const prefix = process.env.LOGGER_PREFIX || "Logger";
-const level = process.env.LOGGER_LEVEL || "debug";
+const level = (process.env.LOGGER_LEVEL || "debug") as winston.level;
 const enable = process.env.ENABLE_CLOUD_LOGGING ?
   process.env.ENABLE_CLOUD_LOGGING.toLowerCase() === "true" : false;
 
