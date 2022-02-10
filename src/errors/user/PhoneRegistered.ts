@@ -11,5 +11,6 @@ export class PhoneRegisteredError extends BaseError {
 
   code: string;
   message: string;
+  folio: string;
   
 }

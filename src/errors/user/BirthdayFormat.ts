@@ -11,5 +11,6 @@ export class BirthdayFormatError extends BaseError {
 
   code: string;
   message: string;
+  folio: string;
     
 }

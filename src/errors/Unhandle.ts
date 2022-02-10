@@ -11,5 +11,6 @@ export class UnhandleError extends BaseError {
 
   code: string;
   message: string;
+  folio: string;
 
 }

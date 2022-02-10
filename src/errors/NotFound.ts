@@ -11,5 +11,6 @@ export class NotFoundError extends ApiError {
 
   code: string;
   message: string;
+  folio: string;
 
 }

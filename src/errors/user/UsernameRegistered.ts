@@ -11,6 +11,7 @@ export class UsernameRegisteredError extends BaseError {
 
   code: string;
   message: string;
+  folio: string;
   
 }
 

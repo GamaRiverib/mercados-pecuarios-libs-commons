@@ -11,5 +11,6 @@ export class NotAllowedError extends ApiError {
 
   code: string;
   message: string;
+  folio: string;
 
 }

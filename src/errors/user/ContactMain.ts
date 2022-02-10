@@ -11,5 +11,6 @@ export class ContactMainError extends BaseError {
   
   code: string;
   message: string;
+  folio: string;
 
 }

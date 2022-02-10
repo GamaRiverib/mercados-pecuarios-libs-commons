@@ -11,5 +11,6 @@ export class EmailRegisteredError extends BaseError {
 
   code: string;
   message: string;
+  folio: string;
   
 }

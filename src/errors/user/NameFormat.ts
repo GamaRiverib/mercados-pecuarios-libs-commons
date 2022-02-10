@@ -11,5 +11,6 @@ export class NameFormatError extends BaseError {
 
   code: string;
   message: string;
+  folio: string;
   
 }

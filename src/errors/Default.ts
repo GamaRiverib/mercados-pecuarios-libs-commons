@@ -11,5 +11,6 @@ export class DefaultError extends BaseError {
 
   code: string;
   message: string;
+  folio: string;
 
 }

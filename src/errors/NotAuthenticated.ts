@@ -13,5 +13,6 @@ export class NotAuthenticatedError extends ApiError {
 
   code: string;
   message: string;
+  folio: string;
 
 }

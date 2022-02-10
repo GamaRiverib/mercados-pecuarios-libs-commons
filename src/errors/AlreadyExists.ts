@@ -11,5 +11,6 @@ export class AlreadyExistsError extends BaseError {
 
   code: string;
   message: string;
+  folio: string;
 
 }

@@ -11,5 +11,6 @@ export class UsernameFormatError extends BaseError {
 
   code: string;
   message: string;
+  folio: string;
   
 }

@@ -11,5 +11,6 @@ export class BadPasswordError extends BaseError {
 
   code: string;
   message: string;
+  folio: string;
 
 }

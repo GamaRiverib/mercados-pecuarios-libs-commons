@@ -11,5 +11,6 @@ export class DefaultUserRepositoryError extends BaseError {
 
   code: string;
   message: string;
+  folio: string;
   
 }

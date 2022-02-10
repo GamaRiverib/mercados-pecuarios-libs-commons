@@ -11,5 +11,6 @@ export class StateNotValidError extends ApiError {
 
   code: string;
   message: string;
+  folio: string;
 
 }

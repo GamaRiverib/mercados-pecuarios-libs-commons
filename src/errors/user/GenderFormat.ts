@@ -11,5 +11,6 @@ export class GenderFormatError extends BaseError {
 
   code: string;
   message: string;
+  folio: string;
   
 }
