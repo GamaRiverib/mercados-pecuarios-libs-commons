@@ -3,6 +3,7 @@ export abstract class BaseError {
   public message: string = "";
   public code: string = "";
   public id: string = "";
+  public folio: string = "";
 
   constructor(message: string, code: string) {
 
@@ -18,11 +19,11 @@ export abstract class BaseError {
       set: undefined
     });
 
-    const folio: string = this.generateFolio(10);
+    this.folio = this.generateFolio(10);
 
     Object.defineProperty(this, "id", {
       configurable: false,
-      get: () => { return folio; },
+      get: () => { return this.folio; },
       set: undefined
     });
 
