@@ -98,7 +98,8 @@ export function isMediaAuthor(req: any, res: any, next: any): void {
 
 export function isAnalyst(req: any, res: any, next: any): void {
   const roles: string[] = [
-    USER_ROLES.ANALYST
+    USER_ROLES.ANALYST,
+    USER_ROLES.ANALYST_VISITOR
   ];
   return validate(roles, req, res, next);
 }
@@ -107,7 +108,8 @@ export function canAdminAnalyticalReports(req: any, res: any, next: any): void {
   const roles: string[] = [
     USER_ROLES.SUPER_ADMIN,
     USER_ROLES.ADMIN,
-    USER_ROLES.ANALYST
+    USER_ROLES.ANALYST,
+    USER_ROLES.ANALYST_VISITOR
   ];
   return validate(roles, req, res, next);
 }

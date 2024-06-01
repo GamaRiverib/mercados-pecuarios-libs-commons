@@ -61,14 +61,14 @@ export function middleware(req: any, res: any, next: any): void {
     }
     if (!json) {
       const error = new VerificationAccessTokenError();
-      writeLogWarn(req, error, { reason: "Empaty payload" });
+      writeLogWarn(req, error, { reason: "Empty payload" });
       res.status(400).send({ error });
       return;
     }
     const payload = json.payload;
     if (!payload) {
       const error = new VerificationAccessTokenError();
-      writeLogWarn(req, error, { reason: "Empaty payload" });
+      writeLogWarn(req, error, { reason: "Empty payload" });
       res.status(400).send({ error });
       return;
     }
