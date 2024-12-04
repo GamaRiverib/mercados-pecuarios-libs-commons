@@ -1,7 +1,7 @@
 {
   "name": "@mercados-pecuarios/commons-lib",
   "description": "Biblioteca de clases comunes para los proyectos de la solución Sitio Web Mercados Pecuarios",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "main": "./build/index.js",
   "license": "Apache-2.0",
   "author": "José Gamaliel Rivera Ibarra <gama.rivera@gmail.com> (https://gamarivera.dev)",
@@ -15,9 +15,9 @@
     "tsc": "tsc"
   },
   "dependencies": {
-    "@google-cloud/logging-winston": "^5.3.0",
-    "jsonwebtoken": "^9.0.0",
-    "winston": "^3.8.2"
+    "@google-cloud/logging-winston": "^6.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
