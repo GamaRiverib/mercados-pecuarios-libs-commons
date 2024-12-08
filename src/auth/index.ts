@@ -17,6 +17,7 @@ const logger: winston.Logger = createLogger("Auth");
 
 export interface User {
   uid: string;
+  tenant: string;
   roles: string[];
   membership?: {
     type: string;
@@ -74,6 +75,7 @@ export function middleware(req: any, res: any, next: any): void {
     }
     req[USER_ID_KEY] = {
       uid: payload.sub,
+      tenant: payload.firebase?.tenant || '',
       roles: payload.roles || [],
       membership: payload.membership
     };
