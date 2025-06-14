@@ -1,7 +1,7 @@
 {
   "name": "@mercados-pecuarios/commons-lib",
   "description": "Biblioteca de clases comunes para los proyectos de la solución Sitio Web Mercados Pecuarios",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "main": "./build/index.js",
   "license": "Apache-2.0",
   "author": "José Gamaliel Rivera Ibarra <gama.rivera@gmail.com> (https://gamarivera.dev)",
