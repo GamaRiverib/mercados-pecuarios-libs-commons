@@ -218,7 +218,8 @@ const PLATFORM_TENANT_ID_MAP = {
   website: "website-members-qzlsi",
   wizardv0: "wizard-v0-pnilk",
   cattlewiz: "cattlewiz-xok4g",
-  ugrps: "ugrpswiz-o3evi"
+  ugrps: "ugrpswiz-o3evi",
+  bafar: "bafarwiz-6mcsk"
 };
 
 export const PLATFORMS_KEYS = Object.keys(PLATFORM_TENANT_ID_MAP);
