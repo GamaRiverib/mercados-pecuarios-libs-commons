@@ -219,7 +219,8 @@ const PLATFORM_TENANT_ID_MAP = {
   wizardv0: "wizard-v0-pnilk",
   cattlewiz: "cattlewiz-xok4g",
   ugrps: "ugrpswiz-o3evi",
-  bafar: "bafarwiz-6mcsk"
+  bafar: "bafarwiz-6mcsk",
+  econowiz: "econowiz-3i2k1",
 };
 
 export const PLATFORMS_KEYS = Object.keys(PLATFORM_TENANT_ID_MAP);
